@@ -6,6 +6,8 @@ import dessertImg from '../../../assets/menu/dessert-bg.jpeg';
 import PopularMenu from '../../Home/PopularMenu/PopularMenu';
 import SectionTitle from '../../../Componants/SectionTitle/SectionTitle';
 import MenuCategory from '../MenuCategory/MenuCategory';
+import useMenu from '../../../Hooks/useMenu';
+
 
 const Menu = () => {
     const [menu]= useMenu();
@@ -20,7 +22,7 @@ const Menu = () => {
             <Helmet>
                 <title>Bistro Boss | Menu</title>
             </Helmet>
-            <Cover img={menuImg} title={title}></Cover>
+            <Cover img={menuImg} title="our menu"></Cover>
             {/* main cover */}
             <SectionTitle  subHeading="Don't Miss" heading="Today's offer"></SectionTitle>
             {/* offered menu item */}
